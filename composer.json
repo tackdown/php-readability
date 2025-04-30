@@ -1,5 +1,5 @@
 {
-    "name": "j0k3r/php-readability",
+    "name": "tackdown/php-readability",
     "type": "library",
     "description": "Automatic article extraction from HTML",
     "keywords": ["article extraction","content extraction","extraction","article","content","html"],
