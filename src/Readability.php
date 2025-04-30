@@ -1481,7 +1481,7 @@ class Readability implements LoggerAwareInterface
     private function hasSingleTagInsideElement(\DOMElement $node, string $tag): bool
     {
         $childNodes = iterator_to_array($node->childNodes);
-        $children = array_filter($childNodes, fn ($childNode) => $childNode instanceof \DOMElement);
+        $children = array_values(array_filter($childNodes, fn ($childNode) => $childNode instanceof \DOMElement));
 
         // There should be exactly 1 element child with given tag
         if (1 !== \count($children) || $children[0]->nodeName !== $tag) {
